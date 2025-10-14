@@ -27,3 +27,10 @@ __pycache__/
 # OS
 .DS_Store
 Thumbs.db
+# Ignore frontend backup git metadata
+frontend/.git.backup/
+# Node modules and build artifacts
+node_modules/
+frontend/node_modules/
+*.log
+
