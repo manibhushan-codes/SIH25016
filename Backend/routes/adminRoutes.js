@@ -6,3 +6,5 @@ const { protect, admin } = require('../middleware/authMiddleware');
 router.get('/users', protect, admin, getAllUsers);
 
 module.exports = router;
+
+
