@@ -1,3 +1,19 @@
-import React from "react";
-const AdminPortal = () => <div><h1>Welcome Admin Dashboard</h1></div>;
-export default AdminPortal;
+import React from 'react';
+
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
+import AdminDashboard from './components/AdminDashboard';
+import NotFound from './pages/NotFound';
+
+function App() {
+  return (
+    <Router>
+      <Routes>
+  <Route path="/" element={<Navigate to="/admin" replace />} />
+  <Route path="/admin" element={<AdminDashboard />} />
+        <Route path="*" element={<NotFound />} />
+      </Routes>
+    </Router>
+  );
+}
+
+export default App;

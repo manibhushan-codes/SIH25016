@@ -16,13 +16,7 @@ const UserTypeSelector = ({ userType, setUserType }) => (
     >
       Staff
     </button>
-    <button
-      className={userType === "Admin" ? "active" : ""}
-      onClick={() => setUserType("Admin")}
-      type="button"
-    >
-      Admin
-    </button>
+    
   </div>
 );
 

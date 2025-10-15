@@ -1,3 +1,8 @@
-import React from "react";
-const StaffPortal = () => <div><h1>Welcome Staff Dashboard</h1></div>;
-export default StaffPortal;
+import React from 'react';
+import StaffDashboard from './components/StaffDashboard';
+
+const App = () => {
+	return <StaffDashboard />;
+};
+
+export default App;
